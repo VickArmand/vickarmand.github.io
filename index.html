@@ -1,47 +1,72 @@
 <html>
     <head>
-        <link rel="stylesheet" href="assets/images/home.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/images/home.png">
+        <link rel="stylesheet" href="assets/css/styles.css">
         <title>Rental House Management Landing Page</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <div class="icon" onclick="hideNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+        <main>
         <section id="intro">
             <header>RENTAL HOUSE MANAGEMENT SYSTEM</header>
-            <p>This is a project that entails creati</p>
-            <button>SHOW APP</button>
+            <p>This is a project aimed at helping individual rental housing property owners (landlords) execute tasks such as managing entities such as tenants, rooms and tracking tenant accounting information.</p>
         </section>
         <section id="features">
+            <header>FEATURES</header>
+            <article>
             <div>
+                <img src="assets/images/rentals.jpg" alt="">
+                <p class="feature-header">Manage Rentals</p>
+                <p class="feature-body">This includes creation and updation of rentals</p>
+            </div>
+            <div>
+                <img src="assets/images/rooms.jpg" alt="">
                 <p class="feature-header">Manage Rooms</p>
                 <p class="feature-body">This includes creation and updation of rooms</p>
             </div>
             <div>
+                <img src="assets/images/tenants.jpg" alt="">
                 <p class="feature-header">Manage Caretakers and Tenants</p>
                 <p class="feature-body">This includes registering a room to a tenant, assigning a room to a tenant, setting a room to vacant</p>
             </div>
             <div>
+                <img src="assets/images/transactions.jpg" alt="">
                 <p class="feature-header">Manage Tenant Accounting Information</p>
                 <p class="feature-body">This includes inserting and editing tenant transactions such as monthly rent payments, water or electricity bill payments</p>
             </div>
+        </article>
         </section>
         <section id="about">
+            <header>ABOUT</header>
             <div class="inspiration">
                 <p>This project was inspired by Rental Housing owners who record tenant, room, tenant accounting information in books. This is a disadvantage to them because they can easily lose records. Therefore my project acts as a solution to this problem.</p>
             </div>
             <div class="links">
                 <ul>
-                    <li>Linkedin: <a href="https://www.linkedin.com/in/victor-maina-3a894922a/">here</a></li>
-                    <li>Github: <a href="https://github.com/VickArmand/">here</a></li>
-                    <li>Github repository: <a href="https://github.com/VickArmand/RentalHousingManagementSystem">here</a></li>
+                    <p>The team involved only 1 person:</p>
+                    <li><a href="https://www.linkedin.com/in/victor-maina-3a894922a/">Linkedin </a></li>
+                    <li><a href="https://github.com/VickArmand/">Github</a></li>
+                    <li><a href="https://github.com/VickArmand/RentalHousingManagementSystem">Github repository</a></li>
                 </ul>
             </div>
         </section>
+    </main>
+    </div>
     </body>
     <script>
         
