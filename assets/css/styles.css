@@ -4,9 +4,6 @@
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
 }
-div.container{
-    padding: 20px;
-}
 section
 {
     text-align: center;
@@ -14,13 +11,14 @@ section
 }
 section#intro
 {
-    background-image: linear-gradient(to bottom,rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../images/house.jpeg');
+    background-image: linear-gradient(to bottom,rgba(138, 146, 206, 0.52), rgba(141, 120, 136, 0.73)), url('../images/house.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 500px;
     display: table-cell;
     vertical-align: middle;
+    color: rgb(12, 4, 29);
 }
 section#features{
     background-color: rgb(113, 240, 240);
@@ -62,15 +60,21 @@ header nav{
     position: fixed;
     overflow: auto;
 }
-header nav div.icon div{
+header
+{
+    position: relative;
+}
+header div.icon div{
     width: 35px;
     height: 5px;
     background-color: white;
     margin: 6px 0;
 }
-header nav div.icon{
+header div.icon{
     margin-right: 10px;
-    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 header nav ul{
     padding: 30px;
@@ -87,7 +91,7 @@ header nav ul li a:hover{
     color: black;
 }
 main{
-    margin-left: 200px;
+    margin-left: 150px;
 }
 section#intro p{
     font-size: 20px;
@@ -98,4 +102,14 @@ section#about ul li a{
 section#about ul li{
     list-style-type: none;
     display: inline-block;
+}
+section#about a{
+    color: wheat;
+    background-color: rgb(63, 76, 150);
+    border: 1px solid rgb(63, 76, 150);
+    border-radius: 10px;
+    padding: 6px;
+}
+section#about a:hover{
+    background-color: rgb(2, 5, 20);
 }
