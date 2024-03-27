@@ -5,11 +5,9 @@ function hideNav()
     if(nav.style.display == "block")
     {
         nav.style.display = "none";
-        main.style.marginLeft = "0";
     }
     else
     {
         nav.style.display = "block";
-        main.style.marginLeft = "150px";
     }
 }

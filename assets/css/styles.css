@@ -36,7 +36,8 @@ section#features article
 {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: center;
+   gap: 10px 30px;
 }
 section p{
     padding: 10px 0;
@@ -54,15 +55,13 @@ p.feature-body, p.feature-header{
 p.feature-header{
     font-weight: bold;
 }
-header nav{
-    background-color: cornflowerblue;
-    height: 100%;
-    position: fixed;
-    overflow: auto;
-}
-header
+header nav
 {
-    position: relative;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background-color: cornflowerblue;
+    display: none;
 }
 header div.icon div{
     width: 35px;
@@ -72,7 +71,7 @@ header div.icon div{
 }
 header div.icon{
     margin-right: 10px;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
 }
@@ -90,9 +89,6 @@ header nav ul li a{
 header nav ul li a:hover{
     color: black;
 }
-main{
-    margin-left: 150px;
-}
 section#intro p{
     font-size: 20px;
 }
@@ -103,12 +99,22 @@ section#about ul li{
     list-style-type: none;
     display: inline-block;
 }
+section#about div.links ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+section#about div.links ul li{
+    padding: 10px 0;
+}
 section#about a{
     color: wheat;
     background-color: rgb(63, 76, 150);
-    border: 1px solid rgb(63, 76, 150);
+    border: 1px solid rgb(71, 71, 71);
     border-radius: 10px;
-    padding: 6px;
+    padding: 10px 20px;
 }
 section#about a:hover{
     background-color: rgb(2, 5, 20);
